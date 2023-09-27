@@ -1,0 +1,40 @@
+times:
+  #- Month, day of Month, hour, minute
+  #- Attention! You can't use "*" in parameters of hour and minute or won't work
+  - 'August, 9, 13, 00'
+  - 'August, 16, 13, 00'
+  - 'August, 23, 13, 00'
+  - 'August, 30, 13, 00'
+  - 'September, 6, 13, 00'
+  - 'September, 13, 13, 00'
+  - 'September, 20, 13, 00'
+  - 'September, 27, 13, 00'
+  - 'October, 4, 13, 00'
+  - 'October, 11, 13, 00'
+  - 'October, 18, 13, 00'
+  - 'October, 25, 13, 00'
+  - 'November, 4, 13, 00'
+  - 'November, 11, 13, 00'
+  - 'November, 18, 13, 00'
+  - 'November, 25, 13, 00'
+  - 'December, 4, 13, 00'
+  - 'December, 11, 13, 00'
+  - 'December, 18, 13, 00'
+  - 'December, 25, 13, 00'
+
+  - '*, *, 20, 00' # Every day on the o'clock 20:00
+  - '*, 15, 15, 00' # Every 15 of day on the o'clock 15:00
+  - '6, *, 16, 00' #Every day on the o'clock 16:00 only on August
+  - '*, *, *, 00' # Won't work!
+  - '*, *, *, *' # Don't use this.
+
+
+format: '{month} ay {day} gün {hour} saat {minute} dakika {second} saniye'
+items: []
+
+prefix: '§2Envoy§aEvent §f»'
+started-event: '{prefix} §eEnvoy event başladı. Ada başlarına envoy düşürülüyor..'
+sent-event: '{prefix} §eAda başına envoy düşürüldü!'
+finished-event: '{prefix} §eEnvoy event bitmiştir..'
+reload: '{prefix} §aConfig.yml yenilendi.'
+reload-rewards: '{prefix} §cÖdüller güncellendi.'

@@ -1,0 +1,6 @@
+name: FirediaEnvoy
+version: '${version}'
+main: com.scheduleannotions.ScheduleAnnotations
+api-version: '1.18'
+commands:
+  firediaenvoy:
